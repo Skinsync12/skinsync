@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkinSync: learn about five common skin types and simple skincare basics.">
+  <title>SkinSync | Your Skin, Understood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="SkinSync home">
+      <span class="brand-mark" aria-hidden="true">✿</span>
+      <span>SkinSync</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#skin-types">Skin Types</a>
+      <a href="#routine">Routine Guide</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="#skin-types">Find your type <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE CARE, EVERY DAY</p>
+        <h1>Your skin,<br><span>understood.</span></h1>
+        <p class="hero-text">Explore common skin types and discover simple ways to care for your skin.</p>
+        <a class="primary-button" href="#skin-types">Explore skin types <span aria-hidden="true">→</span></a>
+        <p class="hero-note">Simple information. Thoughtful routines. Your pace.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative skincare illustration">
+        <div class="sun-shape"></div>
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <div class="jar">
+          <div class="jar-lid"></div>
+          <div class="jar-body"><span>skin<br>care</span></div>
+        </div>
+        <div class="art-caption">Healthy habits<br>start here <span>♡</span></div>
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+      </div>
+    </section>
+
+    <section class="skin-section" id="skin-types">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW YOUR SKIN</p>
+        <h2>Which skin type sounds like you?</h2>
+        <p>Choose a card to read more. Skin can change with weather, age, products and other factors.</p>
+      </div>
+      <div class="skin-grid">
+        <button class="skin-card normal" data-type="normal">
+          <span class="card-illustration face">☻</span>
+          <span class="card-number">01 / BALANCED</span>
+          <span class="card-title">Normal Skin</span>
+          <span class="card-description">Usually feels comfortable, with balanced oil and moisture.</span>
+          <span class="card-link">Explore type <span>→</span></span>
+        </button>
+        <button class="skin-card dry" data-type="dry">
+          <span class="card-illustration droplet">◒</span>
+          <span class="card-number">02 / THIRSTY</span>
+          <span class="card-title">Dry Skin</span>
+          <span class="card-description">May feel tight, rough or flaky and need extra moisture.</span>
+          <span class="card-link">Explore type <span>→</span></span>
+        </button>
+        <button class="skin-card oily" data-type="oily">
+          <span class="card-illustration shine">✺</span>
+          <span class="card-number">03 / SHINY</span>
+          <span class="card-title">Oily Skin</span>
+          <span class="card-description">Often looks shiny and may have more visible pores.</span>
+          <span class="card-link">Explore type <span>→</span></span>
+        </button>
+        <button class="skin-card combination" data-type="combination">
+          <span class="card-illustration half">◐</span>
+          <span class="card-number">04 / MIXED</span>
+          <span class="card-title">Combination Skin</span>
+          <span class="card-description">Some areas may be oily while others feel dry or normal.</span>
+          <span class="card-link">Explore type <span>→</span></span>
+        </button>
+        <button class="skin-card sensitive" data-type="sensitive">
+          <span class="card-illustration flower">❋</span>
+          <span class="card-number">05 / DELICATE</span>
+          <span class="card-title">Sensitive Skin</span>
+          <span class="card-description">May react easily to products, weather or fragrances.</span>
+          <span class="card-link">Explore type <span>→</span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="routine-section" id="routine">
+      <div>
+        <p class="eyebrow">KEEP IT SIMPLE</p>
+        <h2>A gentle routine is a good place to start.</h2>
+      </div>
+      <div class="routine-steps">
+        <article><span>01</span><div><h3>Cleanse gently</h3><p>Use a mild cleanser that does not leave your skin feeling uncomfortable.</p></div></article>
+        <article><span>02</span><div><h3>Moisturise</h3><p>Choose a moisturiser that feels comfortable for your skin.</p></div></article>
+        <article><span>03</span><div><h3>Protect</h3><p>Use broad-spectrum sunscreen as directed and reapply as its label recommends.</p></div></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <span class="about-flower" aria-hidden="true">✿</span>
+      <p class="eyebrow">ABOUT SKINSYNC</p>
+      <h2>Learn your skin. Care with confidence.</h2>
+      <p>SkinSync is an educational student website designed to make basic skin-type information easy to explore. It does not diagnose skin conditions or replace professional advice.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-brand">SkinSync <span>✿</span></span>
+    <p>Educational information only. For persistent irritation or skin concerns, speak with a qualified healthcare professional.</p>
+  </footer>
+
+  <div class="modal-backdrop" id="detail-modal" hidden>
+    <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close details">×</button>
+      <p class="eyebrow" id="modal-kicker">SKIN TYPE GUIDE</p>
+      <h2 id="modal-title">Skin type</h2>
+      <p class="modal-intro" id="modal-intro"></p>
+      <div class="detail-columns">
+        <div><h3>Common signs</h3><ul id="modal-signs"></ul></div>
+        <div><h3>Care basics</h3><ul id="modal-care"></ul></div>
+      </div>
+      <p class="modal-note" id="modal-note"></p>
+      <button class="primary-button modal-done" id="modal-done">Got it</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
